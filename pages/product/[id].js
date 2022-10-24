@@ -6,7 +6,7 @@ import {Footer, Header} from '../../components';
 import { useDispatch  } from 'react-redux';
 import Image from 'next/image';
 const styles = {
-  productDetailContainer: `w-[92%] m-auto mt-[50px] mr-[50px] flex gap-[50px] md:flex-row p-5 flex-col mb-[65px]`,
+  productDetailContainer: `w-[92%] m-auto mt-[50px] mr-[50px] items-center md:items-start flex gap-[50px] md:flex-row p-5 flex-col mb-[65px]`,
   productDetailDesc: `flex flex-col`,
   quantity: `flex items-center justify-start gap-10 mt-8`,
   quantityDesc:  `flex items-center border-[2px] border-gray-500  text-2xl font-bold`,
