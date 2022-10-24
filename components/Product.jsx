@@ -17,7 +17,9 @@ const Product = ({product, }) => {
         src={product?.data.image}
         width={250}
         height={250} 
-        className={ styles.image} />
+        className={ styles.image} 
+        alt="product"
+        />
         <h1 className='text-gray-500 text-lg my-2 p-2'>{product?.data.title}</h1>
         <h1 className={styles.price}>${product?.data?.price}</h1> 
       </div>

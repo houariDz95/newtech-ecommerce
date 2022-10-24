@@ -1,5 +1,6 @@
 import React from 'react'
 import Router from 'next/router';
+import Image from 'next/image';
 const styles = {
   cartContainerBest: `flex justify-between bg-white rounded-xl mb-4 rounded-xl shadow-lg shadow-gray-400`,
   imageBest: `w-[85px] h-[415px] md:w-[350px]`,
@@ -20,7 +21,7 @@ const HeroBanner = ({product}) => {
             <h1 className={styles.bannerH1}>FINE</h1>
             <button className={styles.bannerButton} onClick={() => Router.push(`/product/${product.id}`)}>Shope Now</button>
           </div>
-          <img src={product?.data.image} className={styles.imageBest } />
+          <img src={product?.data.image} className={styles.imageBest }  alt="hero"/>
           <div className='text-gray-500 text-lg my-2 p-2'>
             <div className={styles.discreption}>
               <p className="md:text-xl font-bold text-slate-500 md:text-right">Descreption</p>

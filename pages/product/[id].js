@@ -48,7 +48,7 @@ const ProductDetails = ({product, id1}) => {
       <Header />
       <div className={styles.productDetailContainer}>
         <div className={styles.imageContainer}>
-          <img src={product?.image} className={styles.productDetailsImage} />
+          <img src={product?.image} className={styles.productDetailsImage} alt="product"/>
         </div>
         <div className={styles.productDetailDesc}>
         <h1 className="text-slate-500 font-bold text-4xl mb-4">{product.title}</h1>

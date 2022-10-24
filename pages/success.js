@@ -12,6 +12,7 @@ const styles = {
 
 const Success = () => {
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch({type: "SUCCESS"});
     runFireworks();

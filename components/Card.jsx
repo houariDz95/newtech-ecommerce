@@ -4,7 +4,6 @@ import { TiDeleteOutline} from 'react-icons/ti';
 import { useSelector, useDispatch } from 'react-redux';
 import { loadStripe } from '@stripe/stripe-js';
 import Link from 'next/link';
-import axios from 'axios';
 
 
 const styles = {
