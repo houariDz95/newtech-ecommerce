@@ -4,10 +4,9 @@ import { collection, doc, getDoc} from "firebase/firestore";
 import {AiFillStar, AiOutlineMinus, AiOutlinePlus, AiOutlineStar } from 'react-icons/ai';
 import {Footer, Header} from '../../components';
 import { useDispatch  } from 'react-redux';
+import Image from 'next/image';
 const styles = {
   productDetailContainer: `w-[92%] m-auto mt-[50px] mr-[50px] flex gap-[50px] md:flex-row p-5 flex-col mb-[65px]`,
-  imageContainer: `w-[350px] h-[350px] rounded-lg shadow-lg shadow-gray-200`,
-  productDetailsImage: `w-full h-full`,
   productDetailDesc: `flex flex-col`,
   quantity: `flex items-center justify-start gap-10 mt-8`,
   quantityDesc:  `flex items-center border-[2px] border-gray-500  text-2xl font-bold`,
@@ -48,7 +47,7 @@ const ProductDetails = ({product, id1}) => {
       <Header />
       <div className={styles.productDetailContainer}>
         <div className={styles.imageContainer}>
-          <img src={product?.image} className={styles.productDetailsImage} alt="product"/>
+          <Image src={product?.image} height={350} width={350} className={styles.productDetailsImage} alt="product" />
         </div>
         <div className={styles.productDetailDesc}>
         <h1 className="text-slate-500 font-bold text-4xl mb-4">{product.title}</h1>

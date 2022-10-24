@@ -4,6 +4,7 @@ import { TiDeleteOutline} from 'react-icons/ti';
 import { useSelector, useDispatch } from 'react-redux';
 import { loadStripe } from '@stripe/stripe-js';
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 const styles = {
@@ -82,7 +83,13 @@ const stripePromise = loadStripe(process.env.stripe_public_key);
         <div >
         {products.length >= 1 && products?.map((item, index) => (
               <div className={styles.product} key={index}>
-                <img src={item?.product?.image} className={styles.productContainerImg} alt="product"/>
+                <Image 
+                src={item?.product.image}
+                width={250}
+                height={250} 
+                className={ styles.productContainerImg} 
+                alt="product"
+                />                
                 <div className={styles.itemDesc}>
                   <div className='flex flex-1 justify-between text-lg mb-2 sm:text-lg md-text-xl text-neutral-500 font-semibold'>
                     <h5>{item?.product?.title}</h5>
