@@ -16,9 +16,8 @@ const Success = () => {
     dispatch({type: "SUCCESS"});
   }
   useEffect(() => {
-    restart();
     runFireworks();
-  }, [restart]);
+  }, []);
 
   return (
     <div className={styles.successWrapper}>
@@ -35,7 +34,7 @@ const Success = () => {
           </a>
         </p>
         <Link href="/">
-          <button type="button" className="mt-8 bg-red-500 text-white rounded-full py-2 w-[300px] font-semibold text-lg">
+          <button type="button" onClick={restart} className="mt-8 bg-red-500 text-white rounded-full py-2 w-[300px] font-semibold text-lg">
             Continue Shopping
           </button>
         </Link>
