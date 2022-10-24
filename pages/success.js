@@ -12,9 +12,11 @@ const styles = {
 
 const Success = () => {
   const dispatch = useDispatch();
-
-  useEffect(() => {
+  const restart = () => {
     dispatch({type: "SUCCESS"});
+  }
+  useEffect(() => {
+    restart();
     runFireworks();
   }, []);
 
