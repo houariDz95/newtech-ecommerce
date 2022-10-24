@@ -18,7 +18,7 @@ const Success = () => {
   useEffect(() => {
     restart();
     runFireworks();
-  }, []);
+  }, [restart]);
 
   return (
     <div className={styles.successWrapper}>
