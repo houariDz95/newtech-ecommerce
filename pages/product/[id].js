@@ -6,9 +6,10 @@ import {Footer, Header} from '../../components';
 import { useDispatch  } from 'react-redux';
 import Image from 'next/image';
 const styles = {
-  productDetailContainer: `w-[92%] m-auto mt-[50px] mr-[50px] items-center md:items-start flex gap-[50px] md:flex-row p-5 flex-col mb-[65px]`,
+  productDetailContainer: `w-full flex flex-col items-center justify-start gap-10 mt-5 md:mb-[180px]  md:flex-row p-5`,
   productDetailDesc: `flex flex-col`,
   quantity: `flex items-center justify-start gap-10 mt-8`,
+  imageContainer: `p-2 shadow-xl shadow-white hover:shadow-gray-200`,
   quantityDesc:  `flex items-center border-[2px] border-gray-500  text-2xl font-bold`,
   num: `px-5 py-2 text-slate-500 `,
   minus: `text-green-500 border-r-[2px] border-gray-500 py-4 px-5 cursor-pointer`,
